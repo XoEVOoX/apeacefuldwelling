@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="matrix">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finding Balance | A Peaceful Dwelling</title>
+  <meta name="description" content="Reflections on balancing tech career, family life, and personal development">
+  <link rel="stylesheet" href="/Site/assets/css/normalize.css">
+  <link rel="stylesheet" href="/Site/assets/css/main.css">
+  <link rel="stylesheet" href="/Site/assets/css/typography.css">
+  <link rel="stylesheet" href="/Site/assets/css/components.css">
+  <link rel="stylesheet" href="/Site/assets/css/starfield.css">
+  <link rel="stylesheet" href="/Site/assets/css/cards.css">
+  <link rel="stylesheet" href="/Site/assets/css/theme.css">
+</head>
+<body>
+  <canvas id="starfield"></canvas>
+  <header class="site-header">
+    <div class="container">
+      <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+        <span class="hamburger"></span>
+      </button>
+      <a href="/" class="site-logo-link">
+        <img src="/Site/assets/MeGusta.png" alt="Site Logo" class="site-logo" />
+      </a>
+      <h1 class="site-title">A Peaceful Dwelling</h1>
+    </div>
+  </header>
+  <div class="main-container">
+    <aside class="left-sidebar">
+      <nav class="site-nav" aria-label="Main navigation">
+        <h3 class="widget-title crt">Navigation</h3>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="/Site/index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="/Site/posts.html" class="nav-link">Posts</a></li>
+          <li class="nav-item"><a href="/Site/projects.html" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="/Site/about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="/Site/contactme.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
+    
+    <main class="post-container">
+      <article class="post-article">
+        <header class="post-header">
+          <div class="post-meta">
+            <time class="post-date" datetime="2025-05-30">May 30, 2025</time>
+            <span class="post-category">Category</span>
+          </div>
+          <h1 class="post-title">title</h1>
+          <div class="post-tags">
+            <span class="tag">tags</span>
+            <span class="tag">tags</span>
+            <span class="tag">tags</span>
+          </div>
+        </header>
+        
+        <div class="post-featured-image">
+          <img src="https://picsum.photos/1200/500?random=1" alt="Person working on laptop while child plays nearby">
+        </div>
+        
+        <div class="post-content">
+          <h2>Subtitle</h2>
+        </div>
+
+        
+        <footer class="post-footer">
+          <div class="post-actions">
+            <a href="/Site/posts.html" class="back-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+              </svg>
+              Back to Posts
+            </a>
+          </div>
+          
+          <div class="post-navigation">
+            <a href="#" class="nav-link">← Previous: Productivity Hacks That Stick</a>
+            <a href="#" class="nav-link">Next: Teaching Kids to Code →</a>
+          </div>
+        </footer>
+      </article>
+    </main>
+    
+    <aside class="right-sidebar">
+  <aside class="right-sidebar">
+      <!-- Clock Widget First -->
+      <div class="widget time-widget">
+        <h3 class="widget-title crt">Time</h3>
+        <div id="clock-widget">
+          <div id="clock-time" class="time-display"></div>
+          <div id="clock-date" class="time-display"></div>
+        </div>
+      </div>
+      
+      <div class="widget compact-theme-controller">
+        <h3 class="widget-title crt">Theme Selector</h3>
+        <div class="theme-selector">
+          <div class="theme-option active" data-theme="matrix">
+            <div class="theme-preview matrix-preview"></div>
+            <span class="theme-label">Matrix</span>
+          </div>
+          <div class="theme-option" data-theme="cyber">
+            <div class="theme-preview cyber-preview"></div>
+            <span class="theme-label">Cyber</span>
+          </div>
+          <div class="theme-option" data-theme="danger">
+            <div class="theme-preview danger-preview"></div>
+            <span class="theme-label">Danger</span>
+          </div>
+          <div class="theme-option" data-theme="orange">
+            <div class="theme-preview orange-preview"></div>
+            <span class="theme-label">Orange</span>
+          </div>
+        </div>
+        <div class="controller-footer">
+          <span class="current-theme">Current: <span id="active-theme-name">Matrix</span></span>
+        </div>
+      </div>
+    </aside>
+  </div>
+  
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section links">
+        <h4>Connect</h4>
+        <ul class="social-links">
+          <li><a href="https://mastodon.social/@yourusername" target="_blank" rel="me">Mastodon</a></li>
+          <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <p class="footer-quote">"First, solve the problem. Then, write the code." - John Johnson</p>
+        <p class="copyright">Crafted by Anthony Dowdy © 2025</p>
+      </div>
+    </div>
+  </footer>
+  <script src="/Site/assets/js/main.js"></script>
+  <script src="/Site/assets/js/starfield.js"></script>
+  <script src="/Site/assets/js/theme-selector.js"></script>
+  <script src="/Site/assets/js/codeblock-widget.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="A Personal Site and Blog documenting my journey through life, parenthood, active learning, and self-improvement.">
+  <meta name="keywords" content="personal, blog, life, parenthood, active learning, self-improvement, technology, coding">
+  <meta name="author" content="Anthony Dowdy">
+  <meta name="application-name" content="A Peaceful Dwelling">
+  <meta property="og:title" content="A Peaceful Dwelling">
+  <meta property="og:description" content="A Personal Site and Blog documenting my journey through life, parenthood, active learning, and self-improvement.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/Site/assets/MeGusta.ico">
+  <link rel="stylesheet" href="/Site/assets/css/style.css">
+  <link rel="stylesheet" href="/Site/assets/css/normalize.css">
+  <link rel="stylesheet" href="/Site/assets/css/main.css">
+  <link rel="stylesheet" href="/Site/assets/css/typography.css">
+  <link rel="stylesheet" href="/Site/assets/css/components.css">
+  <link rel="stylesheet" href="/Site/assets/css/starfield.css">
+  <link rel="stylesheet" href="/Site/assets/css/cards.css">
+  <link rel="stylesheet" href="/Site/assets/css/theme.css">
+  
+  <title>A Peaceful Dwelling</title>
+  <script src="/Site/assets/js/main.js" defer></script>
+  <script src="/Site/assets/js/starfield.js" defer></script>
+  <script src="/Site/assets/js/theme-selector.js" defer></script>
+  <script src="/Site/assets/js/codeblock-widget.js"></script>
+</head>
+<body>
+  <canvas id="starfield"></canvas>
+  <header class="site-header">
+    <div class="container">
+      <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+        <span class="hamburger"></span>
+      </button>
+      <a href="/" class="site-logo-link">
+        <img src="/Site/assets/MeGusta.png" alt="Site Logo" class="site-logo" />
+      </a>
+      <h1 class="site-title">A Peaceful Dwelling</h1>
+    </div>
+  </header>
+  <div class="main-container">
+    <aside class="left-sidebar">
+    <nav class="site-nav" aria-label="Main navigation">
+      <h3 class="widget-title crt">Navigation</h3>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <span class="glow-bullet"></span>
+          <a href="/Site/index.html" class="nav-link"><span>Home</span></a>
+        </li>
+        <li class="nav-item">
+          <span class="glow-bullet"></span>
+          <a href="/Site/posts.html" class="nav-link"><span>Posts</span></a>
+        </li>
+        <li class="nav-item">
+          <span class="glow-bullet"></span>
+          <a href="/Site/projects.html" class="nav-link"><span>Projects</span></a>
+        </li>
+        <li class="nav-item">
+          <span class="glow-bullet"></span>
+          <a href="/Site/about" class="nav-link"><span>About</span></a>
+        </li>
+        <li class="nav-item">
+          <span class="glow-bullet"></span>
+          <a href="/Site/contactme.html" class="nav-link"><span>Contact</span></a>
+        </li>
+      </ul>
+    </nav>
+    </aside>
+    <main class="main-content">
+      <!-- Card 1 -->
+      <article class="post-card">
+        <div class="terminal-decoration">POST_001</div>
+        <div class="post-content">
+          <div class="post-header">
+            <div class="post-status-group">
+              <div class="post-status">Personal Life</div>
+              <div class="post-id">POST: 2025-031</div>
+            </div>
+            <div class="post-date-group">
+              <div class="post-date">2025.05.30</div>
+              <div class="post-time">evening reflection</div>
+            </div>
+          </div>
+          <h2 class="post-title">Finding Balance: Work, Family, and Personal Growth</h2>
+          <div class="post-category">Life Journey</div>
+          <p class="post-excerpt">
+            Reflecting on my journey of balancing a career in tech with family life and personal development. Sharing insights and lessons learned about maintaining harmony in a busy life.
+          </p>
+          <div class="post-stats">
+            <div class="stat-item">
+              <span class="stat-value">342</span>
+              <span class="stat-label">Views</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">5</span>
+              <span class="stat-label">Min Read</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">28</span>
+              <span class="stat-label">Likes</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">7</span>
+              <span class="stat-label">Comments</span>
+            </div>
+          </div>
+          <div class="post-tags">
+            <span class="tag">life-balance</span>
+            <span class="tag">family</span>
+            <span class="tag">personal-growth</span>
+          </div>
+          <div class="post-footer">
+            <div class="action-buttons">
+              <a href="#" class="read-more">Read Full Story</a>
+              <a href="#" class="secondary-action">Share Story</a>
+            </div>
+            <div class="post-meta">
+            </div>
+          </div>
+        </div>
+        <div class="post-image">
+          <img src="https://picsum.dev/800/250" alt="Post featured image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="image-placeholder" style="display: none;">◉ PLACEHOLDER</div>
+          <div class="image-overlay"></div>
+        </div>
+      </article>
+    </main>
+
+    <aside class="right-sidebar">
+      <!-- Clock Widget First -->
+      <div class="widget time-widget">
+        <h3 class="widget-title crt">Time</h3>
+        <div id="clock-widget">
+            <div id="clock-time" class="time-display"></div>
+            <div id="clock-date" class="time-display"></div>
+        </div>
+    </div>
+
+    <!-- Network Defense System Widget -->
+    <div class="ids-widget crt-scanlines">
+        <div class="terminal-header">NETWORK DEFENSE SYSTEM v4.2 [ACTIVE]</div>
+        <div class="log-container">
+            <pre id="attackLog"></pre>
+        </div>
+        <div class="stats-bar">
+            <div class="progress-container">
+                <div class="progress"></div>
+                <div class="progress-label">THREAT</div>
+            </div>
+            <span id="threatCount">[0]</span>
+            <button id="analyzeBtn" class="crt">ANALYZE</button>
+        </div>
+    </div>
+
+      <!-- Simplified Theme Controller -->
+      <div class="widget compact-theme-controller">
+        <h3 class="widget-title crt">Theme Selector</h3>
+        <div class="theme-selector">
+          <div class="theme-option active" data-theme="matrix">
+            <div class="theme-preview matrix-preview"></div>
+            <span class="theme-label">Matrix</span>
+          </div>
+          <div class="theme-option" data-theme="cyber">
+            <div class="theme-preview cyber-preview"></div>
+            <span class="theme-label">Cyber</span>
+          </div>
+          <div class="theme-option" data-theme="danger">
+            <div class="theme-preview danger-preview"></div>
+            <span class="theme-label">Danger</span>
+          </div>
+          <div class="theme-option" data-theme="orange">
+            <div class="theme-preview orange-preview"></div>
+            <span class="theme-label">Orange</span>
+          </div>
+        </div>
+        <div class="controller-footer">
+          <span class="current-theme">Current: <span id="active-theme-name">Matrix</span></span>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section links">
+        <h4>Connect</h4>
+        <ul class="social-links">
+          <li><a href="https://mastodon.social/@yourusername" target="_blank" rel="me">Mastodon</a></li>
+          <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <p class="footer-quote">"First, solve the problem. Then, write the code." - John Johnson</p>
+        <p class="copyright">Crafted by Anthony Dowdy © 2025</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

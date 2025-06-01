@@ -1,0 +1,140 @@
+:root {
+  /* Base Colors - These stay constant */
+  --color-background: #0a0a0a;
+  --color-surface: rgba(10, 10, 10, 0.95);
+  --color-text: #ffffff;
+  --color-text-secondary: #666666;
+
+  /* Add transition property to root */
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Core Colors */
+  --primary-color: #00ff00;
+  --secondary-color: #32cd32;
+  --background-color: #000000;
+  --text-color: #00ff00;
+  --link-color: #32cd32;
+  --hover-color: #ffffff;
+  --border-color: #00ff00;
+  
+  /* Component Colors */
+  --card-background: rgba(0, 0, 0, 0.8);
+  --nav-background: rgba(0, 0, 0, 0.9);
+  --widget-background: rgba(0, 0, 0, 0.7);
+  
+  /* Animations */
+  --glow-animation: glow 1s ease-in-out infinite alternate;
+  --transition-speed: 0.3s;
+}
+
+/* Matrix Theme (Default) */
+[data-theme="matrix"] {
+  --accent: #00ff41;
+  --accent-dim: rgba(0, 255, 65, 0.75);
+  --accent-subtle: rgba(0, 255, 65, 0.1);
+  --accent-glow: rgba(0, 255, 65, 0.3);
+
+  --primary-color: #00ff00;
+  --secondary-color: #32cd32;
+  --background-color: #000000;
+  --text-color: #00ff00;
+  --link-color: #32cd32;
+}
+
+/* Purple Theme */
+[data-theme="cyber"] {
+  --accent: #b14aed;
+  --accent-dim: rgba(177, 74, 237, 0.75);
+  --accent-subtle: rgba(177, 74, 237, 0.1);
+  --accent-glow: rgba(177, 74, 237, 0.3);
+
+  --primary-color: #ff00ff;
+  --secondary-color: #00ffff;
+  --background-color: #000000;
+  --text-color: #ff00ff;
+  --link-color: #00ffff;
+}
+
+/* Red Theme */
+[data-theme="danger"] {
+  --accent: #cc0000;
+  --accent-dim: rgba(204, 0, 0, 0.75);
+  --accent-subtle: rgba(204, 0, 0, 0.1);
+  --accent-glow: rgba(204, 0, 0, 0.3);
+
+  --primary-color: #ff0000;
+  --secondary-color: #ff4444;
+  --background-color: #000000;
+  --text-color: #ff0000;
+  --link-color: #ff4444;
+}
+
+/* Orange Theme */
+[data-theme="orange"] {
+  --accent: #c24214;          /* Deeper orange */
+  --accent-dim: rgba(194, 66, 20, 0.75);
+  --accent-subtle: rgba(194, 66, 20, 0.1);
+  --accent-glow: rgba(194, 66, 20, 0.3);
+
+  --primary-color: #ffa500;
+  --secondary-color: #ff8c00;
+  --background-color: #000000;
+  --text-color: #ffa500;
+  --link-color: #ff8c00;
+}
+
+/* Add transitions to all theme variants */
+[data-theme="matrix"],
+[data-theme="cyber"],
+[data-theme="danger"],
+[data-theme="orange"] {
+    transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+                color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Apply transitions to specific elements that use theme colors */
+.site-header,
+.post-card,
+.widget,
+.code-container,
+.theme-option,
+.nav-link,
+.status-bar {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Ensure text and accent colors also transition smoothly */
+* {
+    transition: color 0.3s ease-in-out,
+                background-color 0.3s ease-in-out,
+                border-color 0.3s ease-in-out;
+}
+
+/* Add specific transitions for glowing effects */
+.post-card::before,
+.post-card::after {
+    transition: opacity 0.3s ease-in-out,
+                background-color 0.3s ease-in-out,
+                box-shadow 0.3s ease-in-out;
+}
+
+/* Theme preview transitions */
+.theme-preview {
+    transition: transform 0.2s ease-in-out,
+                box-shadow 0.3s ease-in-out;
+}
+
+/* Theme-specific Animations */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px var(--primary-color),
+                     0 0 10px var(--primary-color),
+                     0 0 15px var(--primary-color);
+    }
+    to {
+        text-shadow: 0 0 10px var(--primary-color),
+                     0 0 20px var(--primary-color),
+                     0 0 30px var(--primary-color);
+    }
+}
