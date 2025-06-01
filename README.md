@@ -1,0 +1,1 @@
+This is my first iteration of this personal site made from scratch. It's crap. I'm going to start over and adhere better to conventional styling, file handling, and general organization. 40 hours invested. Keyword.💪
